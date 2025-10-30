@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awa Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Awa</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Halo, saya Awa.
+Saya orang yang suka belajar hal baru dan tertarik dengan dunia kreatif, terutama dalam marketing dan komunikasi.
+Saya percaya bahwa setiap ide punya potensi besar kalau dikerjakan dengan hati dan semangat.
+Melalui website ini, saya ingin berbagi karya, pengalaman, dan perjalanan saya dalam mengembangkan diri secara profesional.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Pengalaman Kerja</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Desainer Editor</h3>
+        <p>1. Menentukan bagaimana teks dan gambar akan disusun di halaman (baik cetak maupun digital) agar mudah dibaca dan menarik.
+
+            <p>2. Memilih jenis huruf, ukuran, dan spasi yang tepat untuk meningkatkan keterbacaan dan menciptakan hierarki visual.
+
+            <p>3. Memilih atau membuat elemen visual seperti foto, ilustrasi, atau infografis yang mendukung isi teks.
+
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Customer Service</h3>
+        <p>1. Menangani dan menyelesaikan keluhan pelanggan secara efisien dan empati, mengubah pengalaman negatif menjadi positif.
+
+            <p>2. Memberikan informasi produk, layanan, dan promosi secara jelas dan akurat kepada pelanggan
+
+                <p>3. Melayani pembayaran tunai maupun non tunai secaradetail.
+
+                    <p>4. Melakukan laporan keuangan setiap bulannya dan dilaporkan kepada atasan yang terkait.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: salwatazriani2905@gmail.com</p>
+    <p>Instagram :Salwatzrn_</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Awa. NICE TO KNOW U</p>
+  </footer>
+</body>
+</html>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0078ff;
+}
+
+section {
+  padding: 60px 80px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #0078ff;
+  border-bottom: 2px solid #0078ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+  margin-top: 40px;
+}
