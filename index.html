@@ -1,63 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Awa Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Planner Awa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Awa</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container"> 
+    <h2>📊 Grafik Pengeluaran</h2>
+<canvas id="chartPengeluaran" width="300" height="300"></canvas>
+    <h1>FINANCIAL PLANNER</h1>
+    <p class="subtitle">SITI SALWA TAZRIANI</p>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Halo, saya Awa.
-Saya orang yang suka belajar hal baru dan tertarik dengan dunia kreatif, terutama dalam marketing dan komunikasi.
-Saya percaya bahwa setiap ide punya potensi besar kalau dikerjakan dengan hati dan semangat.
-Melalui website ini, saya ingin berbagi karya, pengalaman, dan perjalanan saya dalam mengembangkan diri secara profesional.</p>
-  </section>
-
-  <section id="portfolio">
-    <h2>Pengalaman Kerja</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Desainer Editor</h3>
-        <p>1. Menentukan bagaimana teks dan gambar akan disusun di halaman (baik cetak maupun digital) agar mudah dibaca dan menarik.
-
-            <p>2. Memilih jenis huruf, ukuran, dan spasi yang tepat untuk meningkatkan keterbacaan dan menciptakan hierarki visual.
-
-            <p>3. Memilih atau membuat elemen visual seperti foto, ilustrasi, atau infografis yang mendukung isi teks.
-
-        </p>
+    <div class="dashboard">
+      <div class="card">
+        <h3>INCOME</h3>
+        <p>Rp <span id="income">2,400,000</span></p>
       </div>
-      <div class="project-card">
-        <h3>Customer Service</h3>
-        <p>1. Menangani dan menyelesaikan keluhan pelanggan secara efisien dan empati, mengubah pengalaman negatif menjadi positif.
-
-            <p>2. Memberikan informasi produk, layanan, dan promosi secara jelas dan akurat kepada pelanggan
-
-                <p>3. Melayani pembayaran tunai maupun non tunai secaradetail.
-
-                    <p>4. Melakukan laporan keuangan setiap bulannya dan dilaporkan kepada atasan yang terkait.</p>
+      <div class="card">
+        <h3>EXPENSES</h3>
+        <p>Rp <span id="expenses">0</span></p> 
+      </div>
+      <div class="card">
+        <h3>SAVINGS</h3>
+        <p>Rp <span id="savings">0</span></p>
       </div>
     </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: salwatazriani2905@gmail.com</p>
-    <p>Instagram :Salwatzrn_</p>
-  </section>
+    <div class="section">
+      <h2>💰 GAJI</h2>
+      <table id="tabelKeuangan">
+        <thead>
+          <tr>
+            <th>Kategori</th>
+            <th>Jumlah (Rp)</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
 
-  <footer>
-    <p>© 2025 Awa. NICE TO KNOW U</p>
-  </footer>
+    <div class="input-section">
+      <input type="text" id="kategori" placeholder="Kategori (misal: Skincare)">
+      <input type="number" id="jumlah" placeholder="Jumlah (Rp)">
+      <button onclick="tambahData()">Tambah</button>
+    </div>
+
+    <h2>Total: Rp <span id="total">0</span></h2>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Library Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
